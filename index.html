@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tephra Capital — Crypto-native venture firm, San Francisco</title>
+<meta name="description" content="Tephra Capital is an early-stage crypto venture firm backing the builders of the decentralized economy. Founded 2021 · San Francisco.">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="canonical" href="https://tephra.capital/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0a0c'/%3E%3Cpath d='M16 5 L27 27 L5 27 Z' fill='%23ff5c28'/%3E%3Cpath d='M16 13 L21.5 23.5 L10.5 23.5 Z' fill='%230a0a0c'/%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tephra Capital">
+<meta property="og:title" content="Tephra Capital — Capital for the builders of the decentralized economy">
+<meta property="og:description" content="An early-stage crypto venture firm. $250M+ in the protocols, infrastructure, and teams defining open financial rails.">
+<meta property="og:url" content="https://tephra.capital/">
+<meta property="og:locale" content="en_US">
+<!-- TODO: загрузи файл og-image.jpg (1200×630) в корень сайта — превью в LinkedIn/шаринге -->
+<meta property="og:image" content="https://tephra.capital/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tephra Capital — crypto-native venture firm, San Francisco">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tephra.capital/og-image.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Tephra Capital","alternateName":"Tephra Capital Management LLC","url":"https://tephra.capital","logo":"https://tephra.capital/og-image.jpg","foundingDate":"2021","email":"hello@tephra.capital","address":{"@type":"PostalAddress","streetAddress":"One Sansome Street, 40th Floor","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94104","addressCountry":"US"},"sameAs":["https://x.com/tephracapital","https://www.linkedin.com/company/tephra-capital"]}
+</script>
+<!-- Прячем косметическое предупреждение Tailwind CDN из консоли -->
+<script>
+(function(){var w=console.warn.bind(console);console.warn=function(){var a=[].slice.call(arguments);if(String(a[0]||'').indexOf('cdn.tailwindcss.com')<0)w.apply(null,a);};})();
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<script>
+tailwind.config = {
+  theme: { extend: {
+    colors: { ink:'#08080a', ink2:'#0e0e12', ink3:'#14141a', ember:'#ff5c28', bone:'#eceae4', ash:'#a09da8', faint:'#6f6c78' },
+    fontFamily: {
+      display:['"Space Grotesk"','sans-serif'],
+      body:['Inter','sans-serif'],
+      serif:['Newsreader','Georgia','serif'],
+    },
+  }}
+}
+</script>
+<style>
+  html{scroll-behavior:smooth}
+  body{background:#08080a;-webkit-font-smoothing:antialiased}
+  ::selection{background:#ff5c28;color:#fff}
+  /* grain */
+  body::before{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.045;
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 240 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* ===== accessibility ===== */
+  :focus-visible{outline:2px solid #ff5c28;outline-offset:3px;border-radius:4px}
+  .skip-link{position:fixed;top:10px;left:10px;z-index:200;padding:10px 18px;border-radius:10px;background:#ff5c28;color:#fff;font-size:13px;font-weight:600;transform:translateY(-220%);transition:transform .25s ease}
+  .skip-link:focus{transform:none}
+
+  /* ===== scroll progress ===== */
+  #scrollProgress{position:fixed;top:0;left:0;height:2px;width:0;z-index:90;
+    background:linear-gradient(90deg,#ff5c28,#ffb35c);box-shadow:0 0 12px rgba(255,92,40,.6)}
+
+  /* ===== nav ===== */
+  .nav-link{position:relative;color:#a09da8;transition:color .2s}
+  .nav-link:hover{color:#eceae4}
+  .nav-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1.5px;background:#ff5c28;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.3,1)}
+  .nav-link:hover::after,.nav-link.router-link-active::after{transform:scaleX(1)}
+  .nav-link.router-link-active{color:#eceae4}
+  #mobileMenu:not(.hidden){animation:menuIn .3s ease}
+  @keyframes menuIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:none}}
+
+  /* ===== hero decor ===== */
+  .hero-grid{background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:72px 72px;mask-image:radial-gradient(ellipse 90% 70% at 50% 20%,black 30%,transparent 75%)}
+  .hero-glow{background:radial-gradient(closest-side,rgba(255,92,40,.16),transparent);animation:breathe 7s ease-in-out infinite}
+  @keyframes breathe{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:.9;transform:scale(1.08)}}
+  .spotlight{position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(540px circle at var(--mx,50%) var(--my,30%),rgba(255,92,40,.07),transparent 45%)}
+
+  /* ===== ember sparks (tephra = вулканический пепел) ===== */
+  .spark{position:absolute;bottom:-6px;border-radius:50%;background:#ff8a4d;opacity:0;pointer-events:none;animation-name:rise;animation-timing-function:linear;animation-iteration-count:infinite}
+  @keyframes rise{0%{transform:translate(0,0);opacity:0}8%{opacity:.5}85%{opacity:.18}100%{transform:translate(3vw,-92vh);opacity:0}}
+
+  /* ===== word-by-word reveal ===== */
+  .js-words .word{display:inline-block;opacity:0;transform:translateY(24px);filter:blur(7px);
+    transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.3,1),filter .65s ease}
+  .js-words.words-in .word{opacity:1;transform:none;filter:blur(0)}
+  .shimmer{background:linear-gradient(100deg,#ff5c28 0%,#ffb35c 25%,#ffd9a0 50%,#ffb35c 75%,#ff5c28 100%);
+    background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+    animation:shimmer 6s linear infinite}
+  @keyframes shimmer{to{background-position:-200% 0}}
+
+  /* ===== index chart draw-on ===== */
+  .chart-fill{opacity:0;transition:opacity .9s ease 1s}
+  .chart-drawn .chart-fill{opacity:1}
+  .chart-dot{opacity:0;transition:opacity .4s ease}
+  .chart-drawn .chart-dot{opacity:1}
+
+  /* ===== marquee ===== */
+  .marquee{display:flex;width:max-content;animation:scroll 38s linear infinite}
+  .marquee:hover{animation-play-state:paused}
+  @keyframes scroll{to{transform:translateX(-50%)}}
+  .marquee-fade{-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+
+  /* ===== cards & tilt ===== */
+  .card-hover{transition:transform .3s cubic-bezier(.2,.7,.3,1),border-color .3s,background .3s}
+  .card-hover:hover{transform:translateY(-5px);border-color:rgba(255,92,40,.45)}
+  .logo-cell{transition:transform .35s cubic-bezier(.2,.7,.3,1),filter .35s}
+  .group:hover .logo-cell{transform:scale(1.08)}
+  [data-tilt]{transition:opacity .7s ease,transform .6s cubic-bezier(.2,.7,.3,1),border-color .3s,background .3s;transform-style:preserve-3d;will-change:transform}
+  [data-tilt]:hover{border-color:rgba(255,92,40,.45)}
+  [data-tilt].tilting{transition:opacity .7s ease,border-color .3s,background .3s;transition-delay:0s!important}
+
+  /* ===== partner photos: grayscale -> color (из Obsidian) ===== */
+  .photo-wrap{overflow:hidden}
+  .photo-wrap img{filter:grayscale(100%) contrast(1.05);transition:filter .55s ease,transform .55s ease}
+  .group:hover .photo-wrap img{filter:grayscale(0) contrast(1);transform:scale(1.04)}
+  .partner-li:hover .li-ic{color:#fff;background:rgba(10,102,194,.16);border-color:rgba(10,102,194,.55)}
+
+  /* ===== reveal ===== */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.on{opacity:1;transform:none}
+  .fade-in{animation:fadeIn .5s ease both}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  /* ===== buttons (magnetic) ===== */
+  .btn-primary{position:relative;overflow:hidden;will-change:transform;
+    transition:transform .3s cubic-bezier(.2,.7,.3,1),background-color .25s ease}
+  .btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.25) 50%,transparent 60%);transform:translateX(-120%);transition:transform .6s}
+  .btn-primary:hover::after{transform:translateX(120%)}
+
+  /* ===== back to top ===== */
+  #toTop{position:fixed;bottom:24px;right:24px;z-index:70;width:44px;height:44px;border-radius:999px;
+    display:flex;align-items:center;justify-content:center;color:#a09da8;background:rgba(14,14,18,.8);
+    border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(10px);cursor:pointer;
+    opacity:0;transform:translateY(12px);pointer-events:none;transition:.35s ease}
+  #toTop.show{opacity:1;transform:none;pointer-events:auto}
+  #toTop:hover{color:#ff5c28;border-color:rgba(255,92,40,.5)}
+
+  /* ===== form ===== */
+  .field-error{display:none;margin-top:6px;font-size:11.5px;color:#ff8a5e;letter-spacing:.01em}
+  .field.invalid .field-error{display:block}
+  .field.invalid input,.field.invalid textarea{border-color:rgba(255,92,40,.8)}
+  .shake{animation:shake .4s ease}
+  @keyframes shake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-3px)}40%,60%{transform:translateX(3px)}}
+
+  ::-webkit-scrollbar{width:10px}
+  ::-webkit-scrollbar-track{background:#08080a}
+  ::-webkit-scrollbar-thumb{background:#232329;border-radius:5px}
+  ::-webkit-scrollbar-thumb:hover{background:#31313a}
+  summary::-webkit-details-marker{display:none}
+  /* letter prose */
+  .prose-letter p{margin-top:1.25em}
+  .prose-letter h3{font-family:'Space Grotesk';font-size:1.25rem;font-weight:600;color:#eceae4;margin-top:2.2em}
+  .prose-letter em{font-family:Newsreader,serif;font-style:italic}
+  .prose-letter strong{color:#eceae4;font-weight:600}
+  .prose-letter .signature{font-family:Inter;font-size:.875rem;color:#a09da8}
+  .prose-legal p{margin-top:1.25em}
+  .prose-legal h3{font-family:'Space Grotesk';font-size:1.05rem;font-weight:600;color:#eceae4;margin-top:2em}
+  .underline-anim{background-image:linear-gradient(#ff5c28,#ff5c28);background-size:0% 1.5px;background-repeat:no-repeat;background-position:0 100%;transition:background-size .35s}
+  .underline-anim:hover{background-size:100% 1.5px}
+
+  /* ===== reduced motion ===== */
+  @media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  /* бренд-анимации живут всегда */
+  .marquee{animation-duration:38s!important;animation-iteration-count:infinite!important}
+  .hero-glow{animation-duration:7s!important;animation-iteration-count:infinite!important}
+  .shimmer{animation-duration:6s!important;animation-iteration-count:infinite!important}
+  .animate-pulse{animation-duration:2s!important;animation-iteration-count:infinite!important}
+  .js-words .word{opacity:1!important;transform:none!important;filter:none!important}
+}
+</style>
+</head>
+<body class="font-body text-bone">
+
+<button class="skip-link" type="button">Skip to content</button>
+<div id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="fixed top-0 inset-x-0 z-50 border-b border-white/5 bg-ink/80 backdrop-blur-xl">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="flex items-center justify-between h-[68px]">
+      <a href="#/home" class="flex items-center gap-2.5" aria-label="Tephra Capital — home">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#14141a"/><path d="M16 5 L27 27 L5 27 Z" fill="#ff5c28"/><path d="M16 13 L21.5 23.5 L10.5 23.5 Z" fill="#0a0a0c"/></svg>
+        <span class="font-display font-semibold tracking-tight">Tephra&nbsp;Capital</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-[13.5px]" aria-label="Main navigation">
+        <a href="#/home" class="nav-link" data-route="home">Home</a>
+        <a href="#/about" class="nav-link" data-route="about">About</a>
+        <a href="#/portfolio" class="nav-link" data-route="portfolio">Portfolio</a>
+        <a href="#/leadership" class="nav-link" data-route="leadership">Leadership</a>
+        <a href="#/perspectives" class="nav-link" data-route="perspectives">Perspectives</a>
+        <a href="#/contact" class="nav-link" data-route="contact">Contact</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#/contact" class="hidden sm:inline-flex btn-primary items-center text-[13px] font-medium px-5 py-2.5 rounded-full bg-ember text-white hover:bg-[#e64a18]">Pitch us
+          <svg class="ml-1.5" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button id="menuBtn" class="md:hidden p-2.5 -mr-2 text-ash hover:text-bone" aria-label="Toggle menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden pb-5 pt-3 flex-col gap-0.5 text-[15px] border-t border-white/10">
+      <a href="#/home" class="block py-3 text-bone hover:text-ember">Home</a>
+      <a href="#/about" class="block py-3 text-bone hover:text-ember">About</a>
+      <a href="#/portfolio" class="block py-3 text-bone hover:text-ember">Portfolio</a>
+      <a href="#/leadership" class="block py-3 text-bone hover:text-ember">Leadership</a>
+      <a href="#/perspectives" class="block py-3 text-bone hover:text-ember">Perspectives</a>
+      <a href="#/contact" class="block py-3 text-bone hover:text-ember">Contact</a>
+      <a href="#/contact" class="mt-3 text-center py-3 rounded-full bg-ember text-white font-medium">Pitch us</a>
+    </div>
+  </div>
+</header>
+
+<main id="app" class="relative pt-[68px]" tabindex="-1"></main>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="relative border-t border-white/5 bg-ink2">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16">
+    <div class="grid gap-12 md:grid-cols-12">
+      <div class="md:col-span-5">
+        <a href="#/home" class="flex items-center gap-2.5">
+          <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#14141a"/><path d="M16 5 L27 27 L5 27 Z" fill="#ff5c28"/><path d="M16 13 L21.5 23.5 L10.5 23.5 Z" fill="#0a0a0c"/></svg>
+          <span class="font-display font-semibold tracking-tight">Tephra&nbsp;Capital</span>
+        </a>
+        <p class="mt-5 text-sm text-ash max-w-sm leading-relaxed">A crypto-native venture firm backing the builders of the decentralized economy. Founded 2021 · San Francisco.</p>
+        <a href="#/home" class="mt-3 inline-block text-sm text-faint hover:text-bone transition-colors"><span data-domain>tephra.capital</span></a>
+        <div class="mt-6 flex gap-3">
+        
+          </a>
+          <a href="https://www.linkedin.com/company/tephra-capital" target="_blank" rel="noopener noreferrer" aria-label="Tephra Capital on LinkedIn" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-ash hover:text-bone hover:border-ember/60 hover:bg-ink transition-colors">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="md:col-span-2">
+        <h4 class="text-[11px] uppercase tracking-[0.18em] text-faint mb-5">Pages</h4>
+        <div class="flex flex-col gap-3 text-sm">
+          <a href="#/home" class="text-bone/75 hover:text-ember transition-colors">Home</a>
+          <a href="#/about" class="text-bone/75 hover:text-ember transition-colors">About</a>
+          <a href="#/portfolio" class="text-bone/75 hover:text-ember transition-colors">Portfolio</a>
+          <a href="#/leadership" class="text-bone/75 hover:text-ember transition-colors">Leadership</a>
+          <a href="#/perspectives" class="text-bone/75 hover:text-ember transition-colors">Perspectives</a>
+          <a href="#/contact" class="text-bone/75 hover:text-ember transition-colors">Contact</a>
+        </div>
+      </div>
+      <div class="md:col-span-2">
+        <h4 class="text-[11px] uppercase tracking-[0.18em] text-faint mb-5">Firm</h4>
+        <div class="flex flex-col gap-3 text-sm">
+          <a href="#/contact" class="text-bone/75 hover:text-ember transition-colors">Pitch us</a>
+          <a href="#/contact" class="text-bone/75 hover:text-ember transition-colors">LP relations</a>
+          <a href="#/contact" class="text-bone/75 hover:text-ember transition-colors">Press</a>
+          <a href="#/terms" class="text-bone/75 hover:text-ember transition-colors">Terms of Use</a>
+          <a href="#/privacy" class="text-bone/75 hover:text-ember transition-colors">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="md:col-span-3">
+        <h4 class="text-[11px] uppercase tracking-[0.18em] text-faint mb-5">Contact</h4>
+        <div class="flex flex-col gap-3 text-sm">
+          <a data-mailto="hello" class="text-bone/75 hover:text-ember transition-colors cursor-copy" title="Click to copy"></a>
+          <p class="text-bone/75 leading-relaxed">One Sansome Street, 40th Floor<br>San Francisco, CA 94104</p>
+        </div>
+        <p class="mt-6 text-xs text-faint leading-relaxed max-w-xs">🔒 Tephra Capital will never ask for your seed phrase, private keys, or wallet permissions. Always verify you are on our official domain.</p>
+      </div>
+    </div>
+    <div class="mt-14 pt-8 border-t border-white/5">
+      <p class="text-[11px] text-faint leading-relaxed max-w-4xl">© <span id="footYear">2026</span> Tephra Capital Management LLC. All rights reserved. This website is for informational purposes only and does not constitute an offer to sell, or a solicitation of an offer to buy, any security or interest in any investment vehicle. Any such offer or solicitation will be made only by means of definitive offering documents to qualified investors. Venture investing involves substantial risk, including the total loss of invested capital. Past performance is not indicative of future results. Company names, logos, and trademarks are the property of their respective owners and do not imply endorsement.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== TOAST + TO TOP ==================== -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:translate-x-0 md:right-6 z-[80] px-5 py-3 rounded-xl bg-ink3 border border-ember/40 text-sm text-bone shadow-2xl opacity-0 translate-y-2 pointer-events-none transition-all duration-300" role="status" aria-live="polite"></div>
+<button id="toTop" type="button" aria-label="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ==================================================================
+   ⚙️ SITE CONFIG — поменяйте домен/имя здесь, весь сайт обновится
+   ================================================================== */
+const SITE = {
+  name:  'Tephra Capital',
+  short: 'Tephra',
+  legal: 'Tephra Capital Management LLC',
+  domain:'tephra.capital',
+  address: {
+    street:'One Sansome Street, 40th Floor',
+    city:'San Francisco, CA 94104',
+    note:'Financial District · by appointment'
+  },
+  social: {
+    li: 'https://www.linkedin.com/company/tephra-capital'
+  },
+  mail: ['hello','lp','press','careers','kal','daniel','priya']
+};
+const EMAIL = Object.fromEntries(SITE.mail.map(p => [p, `${p}@${SITE.domain}`]));
+document.addEventListener('DOMContentLoaded', initMailBinding);
+function initMailBinding(){
+  document.querySelectorAll('[data-mailto]').forEach(el=>{
+    const e = EMAIL[el.dataset.mailto];
+    if(!e) return;
+    el.textContent = e;
+    el.classList.add('copy-email');
+    el.dataset.email = e;
+  });
+  document.querySelectorAll('[data-domain]').forEach(el => el.textContent = SITE.domain);
+}
+
+/* ===== доступность / производительность ===== */
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ==================================================================
+   🎨 LOGOS
+   ================================================================== */
+const LOGOS = {
+  celestia:`<svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="7" fill="#7B2BF9"/><circle cx="24" cy="6" r="2.4" fill="#7B2BF9"/><circle cx="40" cy="15" r="2.4" fill="#7B2BF9" opacity=".85"/><circle cx="42" cy="33" r="2.4" fill="#7B2BF9" opacity=".7"/><circle cx="24" cy="42" r="2.4" fill="#7B2BF9" opacity=".55"/><circle cx="6" cy="33" r="2.4" fill="#7B2BF9" opacity=".7"/><circle cx="6" cy="15" r="2.4" fill="#7B2BF9" opacity=".85"/></svg>`,
+  layerzero:`<svg viewBox="0 0 48 48" fill="none"><path d="M8 12 L24 22 L40 12" stroke="#ff6a5f" stroke-width="4" stroke-linecap="round"/><path d="M8 22 L24 32 L40 22" stroke="#ff6a5f" stroke-width="4" stroke-linecap="round" opacity=".6"/><path d="M8 32 L24 42 L40 32" stroke="#ff6a5f" stroke-width="4" stroke-linecap="round" opacity=".3"/></svg>`,
+  starknet:`<svg viewBox="0 0 48 48"><path d="M24 4 L44 24 L24 44 L4 24 Z" fill="#EC796B"/><path d="M24 4 L24 24 L4 24 Z" fill="#0B0B23" opacity=".25"/><path d="M24 24 L44 24 L24 44 Z" fill="#0B0B23" opacity=".4"/></svg>`,
+  arbitrum:`<svg viewBox="0 0 48 48" fill="none"><path d="M24 6 L42 38" stroke="#12AAFF" stroke-width="4.5" stroke-linecap="round"/><path d="M10 20 L24 46 L38 20" stroke="#12AAFF" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/><circle cx="24" cy="6" r="3" fill="#12AAFF"/></svg>`,
+  lido:`<svg viewBox="0 0 48 48" fill="none"><path d="M8 18c5 4 10 4 16 0s11-4 16 0" stroke="#4CC9F0" stroke-width="4" stroke-linecap="round"/><path d="M8 28c5 4 10 4 16 0s11-4 16 0" stroke="#4CC9F0" stroke-width="4" stroke-linecap="round" opacity=".6"/><path d="M8 38c5 4 10 4 16 0s11-4 16 0" stroke="#4CC9F0" stroke-width="4" stroke-linecap="round" opacity=".3"/></svg>`,
+  pendle:`<svg viewBox="0 0 48 48"><path d="M24 4 C34 16 38 22 38 30 a14 14 0 0 1 -28 0 C10 22 14 16 24 4 Z" fill="#10B981"/><path d="M24 16 c5 6 7 9 7 14a7 7 0 0 1 -14 0c0-5 2-8 7-14Z" fill="#022C22" opacity=".35"/></svg>`,
+  jupiter:`<svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="5" fill="#C6F62E"/><path d="M24 11 a13 13 0 0 1 13 13" stroke="#C6F62E" stroke-width="4" stroke-linecap="round"/><path d="M24 37 a13 13 0 0 1 -13 -13" stroke="#C6F62E" stroke-width="4" stroke-linecap="round" opacity=".45"/></svg>`,
+  aave:`<svg viewBox="0 0 48 48"><path d="M12 8 h24 a6 6 0 0 1 6 6 v20 l-6 -5 -6 5 -6 -5 -6 5 -6 -5 V14 a6 6 0 0 1 6 -6 Z" fill="#B6509E" opacity=".9"/><circle cx="19" cy="20" r="2.6" fill="#fff"/><circle cx="29" cy="20" r="2.6" fill="#fff"/></svg>`,
+  phantom:`<svg viewBox="0 0 48 48"><path d="M10 22 a14 14 0 0 1 28 0 v14 l-4.7 -4 -4.6 4 -4.7 -4 -4.7 4 -4.6 -4 -4.7 4 Z" fill="#AB9FF2"/><circle cx="18.5" cy="21" r="2.8" fill="#241244"/><circle cx="29.5" cy="21" r="2.8" fill="#241244"/></svg>`,
+  immutable:`<svg viewBox="0 0 48 48"><path d="M24 3 L43 14 V34 L24 45 L5 34 V14 Z" fill="#4F5BFF"/><path d="M17 24 h14 M24 17 v14" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg>`,
+  lens:`<svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="17" stroke="#34D399" stroke-width="4"/><circle cx="24" cy="24" r="7" fill="#34D399"/><circle cx="31" cy="17" r="2" fill="#34D399"/></svg>`,
+  zora:`<svg viewBox="0 0 48 48"><path d="M10 8 h28 v7 L19 33 h19 v7 H10 v-7 L29 15 H10 Z" fill="#ED484C"/></svg>`,
+  tenderly:`<svg viewBox="0 0 48 48" fill="none"><rect x="4" y="4" width="40" height="40" rx="10" fill="#2DD4BF" opacity=".15"/><path d="M6 26 h9 l5 -12 8 22 5 -10 h9" stroke="#2DD4BF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  dune:`<svg viewBox="0 0 48 48"><path d="M4 36 C12 20 20 18 26 26 C32 34 40 30 44 36 Z" fill="#6E8BFF"/><path d="M4 42 C14 30 26 30 34 36 C38 39 42 40 44 42 Z" fill="#6E8BFF" opacity=".5"/></svg>`,
+  walletconnect:`<svg viewBox="0 0 48 48" fill="none"><path d="M14 19 C17 15 21 13 24 13 s7 2 10 6" stroke="#3B99FC" stroke-width="4" stroke-linecap="round"/><path d="M14 27 c3 -4 7 -6 10 -6 s7 2 10 6" stroke="#3B99FC" stroke-width="4" stroke-linecap="round" opacity=".55"/><path d="M17 34 c2 -2 4 -4 7 -4 s5 2 7 4" stroke="#3B99FC" stroke-width="4" stroke-linecap="round" opacity=".3"/></svg>`,
+  thirdweb:`<svg viewBox="0 0 48 48"><path d="M24 6 L42 16 L42 36 L24 46 L6 36 L6 16 Z M24 6 L24 26 M42 16 L24 26 M6 16 L24 26 M24 46 L24 26" fill="#F213A4" fill-opacity=".9" stroke="#F213A4" stroke-width="0"/></svg>`,
+};
+
+/* ==================================================================
+   📊 PORTFOLIO DATA
+   ================================================================== */
+const PORTFOLIO = [
+  { name:'Celestia',     logo:'celestia',   tag:'infrastructure', desc:'The first modular data availability network — publishing and securing rollup data at scale.', url:'https://celestia.org' },
+  { name:'Arbitrum',     logo:'arbitrum',   tag:'infrastructure', desc:'The leading optimistic Layer 2 and the largest DeFi ecosystem off the Ethereum mainnet.',  url:'https://arbitrum.io' },
+  { name:'Starknet',     logo:'starknet',   tag:'infrastructure', desc:'Permissionless validity rollup bringing general-purpose ZK computation to Ethereum.',      url:'https://starknet.io' },
+  { name:'LayerZero',    logo:'layerzero',  tag:'infrastructure', desc:'Omnichain interoperability protocol connecting applications across 100+ blockchains.',     url:'https://layerzero.network' },
+  { name:'Lido',         logo:'lido',       tag:'defi',           desc:'The dominant liquid staking protocol for Ethereum — home of stETH.',                    url:'https://lido.fi' },
+  { name:'Pendle',       logo:'pendle',     tag:'defi',           desc:'Yield trading — split principal and yield into independently tradeable tokens.',         url:'https://pendle.finance' },
+  { name:'Jupiter',      logo:'jupiter',    tag:'defi',           desc:'Solana’s leading exchange aggregator and liquidity infrastructure.',                      url:'https://jup.ag' },
+  { name:'Aave',         logo:'aave',       tag:'defi',           desc:'The open-source liquidity protocol powering on-chain lending and borrowing markets.',    url:'https://aave.com' },
+  { name:'Phantom',      logo:'phantom',    tag:'consumer',       desc:'The friendly multichain wallet for Solana, Ethereum, and Bitcoin.',                      url:'https://phantom.app' },
+  { name:'Immutable',    logo:'immutable',  tag:'consumer',       desc:'Web3 gaming platform — the zkEVM chain and toolkit built for game studios.',             url:'https://immutable.com' },
+  { name:'Lens',         logo:'lens',       tag:'consumer',       desc:'The composable, decentralized social graph — own your audience and your content.',       url:'https://lens.xyz' },
+  { name:'Zora',         logo:'zora',       tag:'consumer',       desc:'The on-chain creation network where every post, song, and drop becomes a token.',      url:'https://zora.co' },
+  { name:'Tenderly',     logo:'tenderly',   tag:'tooling',        desc:'Full-stack Ethereum development platform — simulation, monitoring, and infrastructure.', url:'https://tenderly.co' },
+  { name:'Dune',         logo:'dune',       tag:'tooling',        desc:'Community-driven analytics — SQL queries across every corner of on-chain data.',         url:'https://dune.com' },
+  { name:'WalletConnect',logo:'walletconnect',tag:'tooling',     desc:'The open protocol connecting wallets to 600+ apps across every chain.',                url:'https://walletconnect.com' },
+  { name:'thirdweb',     logo:'thirdweb',   tag:'tooling',        desc:'Complete toolkit to build, deploy, and scale web3 apps and smart contracts.',            url:'https://thirdweb.com' },
+];
+
+const TAG_LABELS = { infrastructure:'Infrastructure', defi:'DeFi & Payments', consumer:'Consumer & Gaming', tooling:'Tooling' };
+const TAG_ORDER  = [['all','All'],['infrastructure','Infrastructure'],['defi','DeFi & Payments'],['consumer','Consumer & Gaming'],['tooling','Tooling']];
+
+/* ==================================================================
+   ✍️ LETTERS
+   ================================================================== */
+const LETTERS = [
+  { slug:'q3-2026-stablecoins', kicker:'Macro · Partner letter', iso:'2026-09-08',
+    title:'Stablecoins are quietly eating the world’s settlement layer',
+    author:'Sam Ojha', role:'Co-Founder & General Partner', date:'Sep 8, 2026', read:'12 min',
+    excerpt:'Processed volume on major stablecoin rails passed $27T annualized this year. We break down what that means for founders — and where Fund II is deploying in response.',
+    body:`
+<p><strong>In the second quarter of 2026, processed volume on the major stablecoin rails passed $27 trillion annualized.</strong> That is not a typo, and it is not a projection — it is settled, completed transfers, more than double the busiest year the card networks ever recorded. Despite three years of regulatory theater and two crypto winters, the humble dollar-token has quietly become the most successful financial product of the decade.</p>
+<p>Most commentary still treats stablecoins as a crypto-native curiosity, a footnote to the exchanges. We think this framing has it exactly backwards. The interesting story is not that crypto people use dollar tokens — it is that <em>everyone else has started to</em>.</p>
+<h3>Why this is happening now</h3>
+<p>Three structural changes converged in the last eighteen months. First, fees collapsed: settling a stablecoin transfer on a modern L2 now costs a fraction of a cent and finalizes in seconds. Second, compliance tooling matured — travel-rule infrastructure, on-chain screening, and programmatic freeze controls made stablecoin flows legible to banks and regulators for the first time. Third, the issuers themselves went institutional: reserve transparency went from marketing language to audited, real-time attestations.</p>
+<p>When rails get cheap and safe at the same time, volume migrates. It migrated.</p>
+<h3>Where the value actually accrues</h3>
+<p>The market still over-indexes on the issuers. Issuance is a scale business with compressed spreads — a race that a handful of incumbents have effectively won. In our analysis, the durable economics sit in two adjacent layers: <strong>distribution</strong> (wallets, payment processors, and gateways that own the merchant and user relationship) and <strong>application</strong> (the businesses for which instant, global, programmable settlement is not a feature but the entire operating model).</p>
+<p>The analogy we keep returning to is the early internet: the ISPs mattered, but the real compounding happened one layer up. Amazon was not a telecom company.</p>
+<h3>What breaks next</h3>
+<p>Correspondent banking is the fragile middle of cross-border payments, and stablecoins route around it by construction. We expect the first visible displacement in corporate treasury operations and USD-denominated payroll for distributed teams — niche enough to avoid politics, painful enough to prove the point. FX remittance corridors follow within a few quarters of that.</p>
+<p>None of this means the incumbents vanish. Banks earn the right to participate by issuing their own settlement tokens and by owning the on/off ramps. Our conversations with treasury teams at large corporates suggest this is already the plan, quietly, with 2027 pilots on the calendar.</p>
+<h3>What we are doing about it</h3>
+<p>Fund II has committed to four positions in this thesis over the past two quarters, and diligence is open on three more. The pattern we back is consistent: founder-market fit at the intersection of payments and cryptography, revenue that does not depend on token incentives, and a wedge product that becomes an operating system rather than a feature. We are particularly drawn to treasury and payment-operations software for stablecoin-native businesses — the QuickBooks of the new settlement layer, if you will forgive the cliché.</p>
+<h3>What we are watching</h3>
+<p>Three variables matter for how the next twelve months unfold. The pace of U.S. federal legislation on payment stablecoins; the compression of reserve-asset yields as rates come down; and whether CBDC pilots in the EU and Asia end up competing with, or accelerating, private stablecoin rails. Our base case is acceleration — regulation that legitimizes what the market already chose.</p>
+<p>We started Tephra with the belief that financial infrastructure gets rebuilt in the open. The stablecoin is that argument, made at $27 trillion a year. The founders building on top of it are the reason Fund II exists.</p>
+<p>As always — we are easy to reach, and we would rather hear your disagreement than our own echo.</p>
+<p class="signature">— Sam Ojha, Co-Founder & General Partner<br>Tephra Capital, San Francisco</p>` },
+  { slug:'restaking-winter', kicker:'Infrastructure · Partner letter', iso:'2026-02-03',
+    title:'The restaking winter, and what survived it',
+    author:'Kal Kakkad', role:'Co-Founder & Managing Partner', date:'Feb 3, 2026', read:'8 min',
+    excerpt:'Restaking was the hottest thesis of 2024 and the coldest of 2025. A post-mortem on incentives, security budgets, and the businesses that quietly kept growing.',
+    body:`
+<p>Two years ago you could not attend a conference without a restaking pitch; today, the rotation has moved on. Like most cycles, the useful signal is in what remains after the excitement leaves.</p>
+<h3>The hype was a pricing error</h3>
+<p>Restaking introduced a genuinely valuable primitive — the reuse of economic security across services — but the 2024 market priced it as though capital supply, not network demand, was the scarce input. Airdrop farming inflated the security budgets of services that nobody needed yet. When the emissions stopped, total value locked corrected by roughly two-thirds and, more importantly, <em>the composition</em> of that value changed: passive yield-chasers left, protocol-owned and exchange-controlled capital stayed.</p>
+<h3>What survived</h3>
+<p>Three categories came through the winter with stronger fundamentals than they entered it. First, the infrastructure itself — operator networks and orchestration layers, which earn fees regardless of which service succeeds. Second, liquid restaking tokens that evolved from yield wrappers into fixed-income instruments with functioning primary markets. Third, and least discussed, the risk-management tooling: slashing simulators and underwriting models that insurance-esque products now depend on.</p>
+<h3>Our position</h3>
+<p>We made two investments in this vertical from Fund II, both into the boring layer — plumbing, not promises. The lesson we carry forward: when a new security model appears, underwrite the meter readers, not the gold rush.</p>
+<p class="signature">— Kal Kakkad, Co-Founder & Managing Partner<br>Tephra Capital, San Francisco</p>` },
+  { slug:'raising-fund-ii-notes', kicker:'Firm · Partner letter', iso:'2025-06-17',
+    title:'What raising Fund II taught us about conviction',
+    author:'Sawai Goyal', role:'Co-Founder & General Partner', date:'Jun 17, 2025', read:'6 min',
+    excerpt:'Nine months, 130 LP conversations, and one uncomfortable realization about how little consensus predicts anything in crypto.',
+    body:`
+<p>Raising Fund II took nine months and roughly a hundred and thirty conversations. This letter is not advice — it is a record of what we believe after the process, so our LPs (and our future selves) can grade us against it.</p>
+<h3>The uncomfortable realization</h3>
+<p>Somewhere around conversation number forty, we noticed a pattern: the questions we could answer fluently were the least correlated with Fund I performance, and the questions that made us hesitate were the ones worth having. “Why will retail adopt X faster than Y?” is seductive and nearly useless. “Which founder hypothesis, if wrong, destroys the investment case — and how will they know within ninety days?” is harder, and predictive.</p>
+<h3>What we changed structurally</h3>
+<p>Fund II keeps 50% reserves versus Fund I’s 38% — not because we grew bolder, but because power-law outcomes in crypto concentrate in the follow-on rounds that look transparently insane at the time. We also formalized the rule that at least one partner has to argue the bear case in writing before we wire a first check. No exceptions.</p>
+<h3>What we did not change</h3>
+<p>Crypto-only mandate, research-first process, and a promise to respond to every founder within five business days. Those proved to be the moat, not the differentiating delusion.</p>
+<p class="signature">— Sawai Goyal, Co-Founder & General Partner<br>Tephra Capital, San Francisco</p>` },
+];
+
+/* ==================================================================
+   🧩 SHARED COMPONENTS
+   ================================================================== */
+const tagChip = t => `<span class="inline-block text-[10px] font-semibold uppercase tracking-[0.14em] px-2.5 py-1 rounded-full border border-white/10 bg-white/[.03] text-ash">${TAG_LABELS[t]}</span>`;
+
+const logoBox = (p, cls='h-12 w-12') => `<span class="logo-cell inline-flex ${cls} items-center justify-center rounded-xl bg-ink border border-white/[.07] p-2" aria-hidden="true">${LOGOS[p.logo]}</span>`;
+
+const portfolioCard = c => `
+  <a href="${c.url}" target="_blank" rel="noopener noreferrer" aria-label="${c.name} — open website"
+     class="card-hover group block rounded-2xl border border-white/[.07] bg-ink2 p-6" data-tilt>
+    <div class="flex items-start justify-between">
+      ${logoBox(c)}
+      <svg class="w-4 h-4 text-faint group-hover:text-ember transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+    </div>
+    <h3 class="mt-5 font-display font-semibold text-[17px] tracking-tight">${c.name}</h3>
+    <div class="mt-2">${tagChip(c.tag)}</div>
+    <p class="mt-3 text-[13px] text-ash leading-relaxed">${c.desc}</p>
+    <div class="mt-5 pt-4 border-t border-white/5 flex items-center justify-between">
+      <span class="text-[11px] font-medium text-faint">${c.url.replace('https://','')}</span>
+      <span class="text-[11px] font-medium text-ember opacity-0 group-hover:opacity-100 transition-opacity">Visit ↗</span>
+    </div>
+  </a>`;
+
+const letterCard = L => `
+  <a href="#/letter/${L.slug}" class="card-hover group flex flex-col h-full rounded-2xl border border-white/[.07] bg-ink2 p-7">
+    <div class="flex items-center justify-between gap-3">
+      <span class="text-[10px] font-semibold uppercase tracking-[0.15em] text-ember">${L.kicker}</span>
+      <span class="text-[11px] text-faint shrink-0">${L.read}</span>
+    </div>
+    <h3 class="mt-4 font-display text-[19px] font-semibold leading-snug group-hover:text-ember transition-colors">${L.title}</h3>
+    <p class="mt-3 text-[13px] text-ash leading-relaxed flex-1">${L.excerpt}</p>
+    <div class="mt-6 pt-4 border-t border-white/5 flex items-center gap-3">
+      <span class="inline-flex h-7 w-7 items-center justify-center rounded-full bg-ember/15 border border-ember/30 text-[10px] font-bold text-ember font-display">${L.author.split(' ').map(w=>w[0]).join('')}</span>
+      <span class="text-[11px] text-faint">${L.author} · ${L.date}</span>
+    </div>
+  </a>`;
+
+const hero = (kicker, title, sub) => `
+  <section class="fade-in relative overflow-hidden border-b border-white/5">
+    <div class="absolute inset-0 hero-grid" aria-hidden="true"></div>
+    <div class="absolute inset-0 spotlight" aria-hidden="true"></div>
+    <div class="absolute inset-0 sparks overflow-hidden" aria-hidden="true"></div>
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] hero-glow" aria-hidden="true"></div>
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8 pt-16 pb-16 md:pt-24 md:pb-20">
+      <div class="flex items-center gap-3">
+        <span class="h-1.5 w-1.5 rounded-full bg-ember animate-pulse" aria-hidden="true"></span>
+        <p class="text-[11px] uppercase tracking-[0.22em] text-ash">${kicker}</p>
+      </div>
+      <h1 class="js-words mt-6 font-display font-semibold tracking-tight text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.04] max-w-4xl">${title}</h1>
+      ${sub ? `<div class="mt-6 max-w-2xl text-ash text-[15.5px] leading-relaxed">${sub}</div>` : ''}
+    </div>
+  </section>`;
+
+const statBlock = (value,label) => `
+  <div class="reveal rounded-2xl border border-white/[.07] bg-ink2 p-6 md:p-7">
+    <div class="font-display text-[28px] md:text-4xl font-semibold tracking-tight text-bone" data-countup="${value}">${value}</div>
+    <div class="mt-1.5 text-[13px] text-ash">${label}</div>
+  </div>`;
+
+/* TODO: замени picsum-фото на реальные (напр. images/Kal.jpg) и проставь реальные LinkedIn-ссылки */
+const partners = [
+  { img:'photos/kal.jpg',  name:'Kal Kakkad',  role:'Co-Founder & Managing Partner', mail:'Kal',
+    bio:'Kal led digital asset markets at a global investment bank before going full-time crypto in 2017. He has backed 60+ early-stage teams across three cycles and sits on the boards of five portfolio companies.',
+    thesis:'DeFi & Payments', tags:['DeFi','Payments','Board work'], li:'https://www.linkedin.com/in/kal-kakkad-a7a8ba233/' },
+	{ img:'photos/sam.jpg',  name:'Sam Ojha',  role:'Principal', mail:'Sam',
+    bio:'Sam focuses on early-stage infrastructure, DeFi and consumer crypto. He works hands-on with founding teams on token design, go-to-market and follow-on fundraising, and is often the first person a founder meets at the firm.',
+    thesis:'Infrastructure & DeFi', tags:['Infrastructure','Token design','GT'], li:'https://www.linkedin.com/in/sam-ojha-9a4b583b8/' },
+
+  { img:'photos/sawai.jpg', name:'Sawai Goyal', role:'Co-Founder & General Partner',  mail:'sawai',
+    bio:'Sawai is a protocol engineer by trade — he contributed to two major L1 clients before founding Tephra. He leads the infrastructure thesis and diligences every line of code we fund at pre-seed.',
+    thesis:'Infrastructure', tags:['Infrastructure','ZK','Security'], li:'https://www.linkedin.com/in/sawai-goyal-29b099378/' },
+  { img:'photos/panda.jpg', name:'Sam Panda',   role:'Co-Founder & General Partner',  mail:'panda',
+    bio:'He built and sold a crypto data company before joining Tephra. He leads the consumer and gaming thesis, the research platform, and the Tephra LP relationships across Asia and Europe.',
+    thesis:'Consumer & Gaming', tags:['Consumer','Gaming','Research'], li:'https://www.linkedin.com/in/sam-panda-b3267234b/' },
+];
+
+/* ==================================================================
+   📄 PAGES
+   ================================================================== */
+function pageHome(){
+  return `
+  <section class="relative overflow-hidden border-b border-white/5">
+    <div class="absolute inset-0 hero-grid" aria-hidden="true"></div>
+    <div class="absolute inset-0 spotlight" aria-hidden="true"></div>
+    <div class="absolute inset-0 sparks overflow-hidden" aria-hidden="true"></div>
+    <div class="absolute -top-48 right-0 w-[760px] h-[760px] hero-glow" aria-hidden="true"></div>
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8 pt-24 pb-20 md:pt-36 md:pb-28">
+      <p class="fade-in text-[11px] uppercase tracking-[0.22em] text-ash">Crypto-native venture capital · San Francisco · est. 2021</p>
+      <h1 class="js-words mt-8 font-display font-semibold tracking-tight text-[2.6rem] sm:text-6xl lg:text-[5rem] leading-[0.98] max-w-5xl">
+        Capital for the builders of the <em class="font-serif italic font-medium shimmer">decentralized economy</em>
+      </h1>
+      <p class="fade-in mt-8 max-w-2xl text-ash text-lg leading-relaxed">${SITE.name} is an early-stage venture firm investing $250M+ in the protocols, infrastructure, and teams defining open financial rails. We lead pre-seed and seed rounds — and stay active partners for the decade ahead.</p>
+      <div class="fade-in mt-10 flex flex-wrap gap-3.5">
+        <a href="#/portfolio" class="btn-primary inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-ember text-white font-medium text-sm hover:bg-[#e64a18]">View Portfolio
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="#/contact" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/15 text-sm font-medium text-bone hover:border-ember/60 hover:bg-ink2 transition-all">Pitch ${SITE.short}</a>
+      </div>
+      <div class="fade-in mt-16 grid grid-cols-3 max-w-xl divide-x divide-white/10">
+        ${[['Founded','2021'],['Fund II','Deploying'],['Portfolio','21 companies']].map(x=>`
+        <div class="px-5 first:pl-0"><div class="text-[11px] uppercase tracking-[0.16em] text-faint">${x[0]}</div><div class="mt-1.5 font-display font-semibold">${x[1]}</div></div>`).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-20 md:py-24">
+    <div class="grid lg:grid-cols-5 gap-12 items-center">
+      <div class="reveal lg:col-span-2">
+        <p class="text-[11px] uppercase tracking-[0.22em] text-ash">The Tephra Index</p>
+        <p class="mt-3 font-display text-3xl font-semibold tracking-tight">Indexed · 2021 = 100</p>
+        <p class="mt-4 text-sm text-ash leading-relaxed">Cumulative portfolio value vs. inception. Bear markets included, held through.</p>
+        <a href="#/portfolio" class="mt-6 inline-block text-sm font-medium text-ember underline-anim">Explore the portfolio →</a>
+      </div>
+      <div class="reveal lg:col-span-3 rounded-2xl border border-white/[.07] bg-ink2 p-5 md:p-7">
+        <svg viewBox="0 0 720 260" class="index-chart w-full h-44 sm:h-56" role="img" aria-label="Tephra Index chart: cumulative portfolio value growing from 100 in 2021 to about 460 in 2026, with a drawdown in 2023">
+          <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff5c28" stop-opacity=".3"/><stop offset="100%" stop-color="#ff5c28" stop-opacity="0"/></linearGradient></defs>
+          ${[204,148,92,36].map(y=>`<line x1="40" x2="700" y1="${y}" y2="${y}" stroke="#fff" stroke-opacity=".05" stroke-dasharray="3 6"/>`).join('')}
+          <path class="chart-fill" d="M40 205 L170 198 L300 206 L430 150 L560 85 L690 11 L690 250 L40 250 Z" fill="url(#g1)"/>
+          <path class="chart-line" d="M40 205 L170 198 L300 206 L430 150 L560 85 L690 11" fill="none" stroke="#ff5c28" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+          ${[[40,205],[170,198],[300,206],[430,150],[560,85],[690,11]].map(p=>`<circle class="chart-dot" cx="${p[0]}" cy="${p[1]}" r="3.5" fill="#08080a" stroke="#ff5c28" stroke-width="2"/>`).join('')}
+          ${['’21','’22','’23','’24','’25','’26'].map((y,i)=>`<text x="${40+i*130}" y="258" fill="#6f6c78" font-size="11" text-anchor="middle" font-family="Inter,sans-serif">${y}</text>`).join('')}
+        </svg>
+      </div>
+    </div>
+    <div class="mt-14 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      ${statBlock('$165M','Fund II · closed 2025')}
+      ${statBlock('$71M','Deployed to date')}
+      ${statBlock('$250M+','Assets under management')}
+      ${statBlock('21','Portfolio companies')}
+      ${statBlock('5','Exits & acquisitions')}
+    </div>
+  </section>
+
+  <section class="border-y border-white/5 bg-ink2 overflow-hidden py-10">
+    <div class="flex items-center gap-6 mb-8 px-5 lg:px-8 max-w-7xl mx-auto">
+      <p class="text-[11px] uppercase tracking-[0.22em] text-faint shrink-0">We invest alongside</p>
+      <div class="h-px flex-1 bg-white/10" aria-hidden="true"></div>
+    </div>
+    <div class="marquee-fade">
+      <div class="marquee" aria-hidden="true">
+        ${'<div class="flex items-center gap-16 pr-16 text-faint font-display text-lg">' + Array(2).fill(0).map(()=> ['Paradigm','Pantera','a16z crypto','Coinbase Ventures','Multicoin Capital','Hack VC','Electric Capital','Robot Ventures'].map(n=>`<span class="whitespace-nowrap">${n}</span>`).join('')).join('') + '</div>'}
+        ${'<div class="flex items-center gap-16 pr-16 text-faint font-display text-lg">' + Array(2).fill(0).map(()=> ['Paradigm','Pantera','a16z crypto','Coinbase Ventures','Multicoin Capital','Hack VC','Electric Capital','Robot Ventures'].map(n=>`<span class="whitespace-nowrap">${n}</span>`).join('')).join('') + '</div>'}
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-20 md:py-28">
+    <div class="reveal">
+      <p class="text-[11px] uppercase tracking-[0.22em] text-ash">Our thesis</p>
+      <h2 class="mt-4 font-display text-3xl md:text-5xl font-semibold tracking-tight">Three theses.<br/>One conviction.</h2>
+      <p class="mt-6 max-w-2xl text-ash text-[15.5px] leading-relaxed">We believe financial infrastructure is being rebuilt in the open. Our capital and research are focused where that transition compounds fastest.</p>
+    </div>
+    <div class="mt-12 grid md:grid-cols-3 gap-5">
+      ${[
+        {n:'01',t:'Foundational Infrastructure',d:'Blockchains are the servers of the new financial system. We back the teams building scalable, censorship-resistant execution, settlement, and data layers.',items:['Layer 1 / Layer 2','ZK Proofs','Interoperability']},
+        {n:'02',t:'DeFi & Financial Rails',d:'Capital markets are migrating on-chain. From exchanges and lending to stablecoin payments and tokenized assets, we fund the rails of open finance.',items:['Stablecoins','Restaking','RWA']},
+        {n:'03',t:'Web3 Consumer',d:'The next billion users won’t read whitepapers — they’ll play, socialize, and transact. We invest in products where crypto disappears into great UX.',items:['Gaming','Social','Identity']}
+      ].map((x,i)=>`
+      <div class="reveal rounded-2xl border border-white/[.07] bg-ink2 p-8" data-tilt style="transition-delay:${i*80}ms">
+        <span class="font-display text-[13px] text-ember font-semibold tracking-widest">${x.n}</span>
+        <h3 class="mt-4 font-display text-xl font-semibold tracking-tight">${x.t}</h3>
+        <p class="mt-3.5 text-[13.5px] text-ash leading-relaxed">${x.d}</p>
+        <ul class="mt-6 flex flex-wrap gap-2">${x.items.map(it=>`<li class="text-[11px] px-2.5 py-1.5 rounded-md bg-white/[.04] border border-white/[.06] text-bone/70">${it}</li>`).join('')}</ul>
+      </div>`).join('')}
+    </div>
+  </section>
+
+  <section class="border-t border-white/5 bg-ink2">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-20 md:py-24">
+      <div class="reveal flex items-end justify-between gap-4 flex-wrap">
+        <div>
+          <p class="text-[11px] uppercase tracking-[0.22em] text-ash">Selected portfolio</p>
+          <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold tracking-tight">Companies we believe in</h2>
+        </div>
+        <a href="#/portfolio" class="text-sm font-medium text-ember underline-anim">All investments →</a>
+      </div>
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">${PORTFOLIO.slice(0,6).map(portfolioCard).join('')}</div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-20 md:py-24">
+    <div class="reveal">
+      <p class="text-[11px] uppercase tracking-[0.22em] text-ash">Market perspective</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold tracking-tight">How we see the market</h2>
+    </div>
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">${LETTERS.map(letterCard).join('')}</div>
+    <div class="mt-8 reveal"><a href="#/perspectives" class="text-sm font-medium text-ember underline-anim">All letters →</a></div>
+  </section>
+
+  <section class="relative overflow-hidden border-t border-white/5 bg-gradient-to-b from-ink to-ink2">
+    <div class="absolute -bottom-56 left-1/2 -translate-x-1/2 w-[640px] h-[640px] hero-glow" aria-hidden="true"></div>
+    <div class="relative max-w-7xl mx-auto px-5 lg:px-8 py-24 text-center">
+      <h2 class="font-display text-3xl md:text-5xl font-semibold tracking-tight">Building in crypto?</h2>
+      <p class="mt-5 text-ash max-w-md mx-auto text-[15px]">We move fast — most first meetings happen within 72 hours of a warm intro.</p>
+      <div class="mt-9 flex flex-wrap gap-3.5 justify-center">
+        <a href="#/contact" class="btn-primary px-7 py-3.5 rounded-full bg-ember text-white font-medium text-sm hover:bg-[#e64a18]">Pitch ${SITE.short}</a>
+        <a href="#/about" class="px-7 py-3.5 rounded-full border border-white/15 text-sm font-medium hover:border-ember/60 hover:bg-ink2 transition-all">Read our thesis</a>
+      </div>
+    </div>
+  </section>`;
+}
+
+function pageAbout(){
+  return `
+  ${hero('About ' + SITE.short, 'Patient capital,<br/><span class="text-ash">crypto conviction</span>', `
+    <p>${SITE.name} was founded in 2021 by three operators who met inside the Ethereum ecosystem and believed the 2010s had only been the warm-up. We invest at the earliest stages, when conviction matters more than consensus.</p>`)}
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-16 md:py-24">
+    <div class="reveal max-w-3xl text-[15.5px] text-ash leading-relaxed">We are deliberately small, research-driven, and founder-first. Our partners sit on every board we take, and our platform team supports portfolio companies across token design, security, market-making, and recruiting.</div>
+    <blockquote class="reveal mt-12 max-w-3xl rounded-2xl border border-white/[.07] bg-ink2 p-8 md:p-10">
+      <svg class="text-ember/50" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 8v8H5V8h5zm9 0v8h-5V8h5z" opacity=".4"/><path d="M4 6h4v10h2v2H4V6zm10 0h4v10h2v2h-6V6z"/></svg>
+      <p class="mt-4 font-serif italic text-xl md:text-2xl text-bone/90 leading-relaxed">Tephra was the first call after our term sheet — and the last call before every hard decision since.</p>
+      <footer class="mt-4 text-[13px] text-faint">— Founder &amp; CEO, portfolio company (Fund I)</footer>
+    </blockquote>
+
+    <div class="mt-16 grid lg:grid-cols-2 gap-8">
+      <div class="reveal">
+        <h3 class="text-[11px] uppercase tracking-[0.22em] text-ash">Fund II at a glance</h3>
+        <div class="mt-5 rounded-2xl border border-white/[.07] bg-ink2 divide-y divide-white/[.05]">
+          ${[['Vintage','2025'],['Fund size','$165M'],['Vehicle',`${SITE.legal} Fund II, LP`],['Initial check','$250K – $3M'],['Reserves','50% of committed capital'],['Target positions','25 – 30 core'],['Status','<span class="inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>Actively deploying</span>']]
+            .map(r=>`<div class="flex justify-between gap-4 px-6 py-4 text-sm"><span class="text-ash">${r[0]}</span><strong class="text-right font-medium">${r[1]}</strong></div>`).join('')}
+        </div>
+      </div>
+      <div class="reveal">
+        <h2 class="font-display text-2xl font-semibold tracking-tight">Investment criteria</h2>
+        <div class="mt-5 rounded-2xl border border-white/[.07] bg-ink2 divide-y divide-white/[.05]">
+          ${[['Stage','Pre-seed & Seed'],['Initial check','$250K – $3M'],['Sectors','Infra · DeFi · Consumer'],['Geography','Global, team-first'],['Round role','Lead or co-lead'],['Follow-on','Up to $10M in reserves']]
+            .map(r=>`<div class="flex justify-between gap-4 px-6 py-4 text-sm"><span class="text-ash">${r[0]}</span><strong class="text-right font-medium">${r[1]}</strong></div>`).join('')}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="border-y border-white/5 bg-ink2">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16 md:py-20">
+      <div class="reveal"><h2 class="font-display text-2xl font-semibold tracking-tight">How we decide</h2></div>
+      <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        ${[['Conviction over consensus','We form our own theses from first principles — then commit before they are obvious.'],
+           ['Operator empathy','Our partners have shipped protocol code, run exchanges, and weathered three bear markets.'],
+           ['Radical candor','Founders get our honest view in days, not weeks of marathon diligence theater.'],
+           ['Decade horizon','Crypto compounds in cycles. We underwrite across them, not around them.']]
+          .map((v,i)=>`<div class="reveal rounded-2xl border border-white/[.07] bg-ink p-7" data-tilt style="transition-delay:${i*70}ms"><div class="h-1 w-8 rounded-full bg-ember" aria-hidden="true"></div><h4 class="mt-5 font-display font-semibold">${v[0]}</h4><p class="mt-3 text-[13px] text-ash leading-relaxed">${v[1]}</p></div>`).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-20 md:py-24">
+    <div class="reveal">
+      <p class="text-[11px] uppercase tracking-[0.22em] text-ash">Our story</p>
+      <h2 class="mt-4 font-display text-3xl md:text-4xl font-semibold tracking-tight">Milestones</h2>
+    </div>
+    <ol class="mt-14 relative border-l border-white/10 ml-3 space-y-14">
+      ${[
+        ['2020','The angel chapter','The partners invest angel capital across the early Ethereum ecosystem — and get deeply hooked on open financial rails.'],
+        ['2021',`${SITE.short} founded`,'The three partners formalize their partnership in San Francisco with a research-first, crypto-only mandate.'],
+        ['2022','Fund I closes at $85M','Backed by endowments, family offices, and founders from previous cycles. First 14 investments in a bear market.'],
+        ['2024','First generation of exits','Five portfolio companies acquired; Fund I marks 4.1x net multiple on invested capital to date.'],
+        ['2025','Fund II closes at $165M','Nearly all Fund I LPs re-up. Team of 11 across San Francisco, London, and Singapore.'],
+        ['2026','21 companies, one focus','Deploying Fund II into the strongest founder pipeline in the firm’s history.']
+      ].map((m,i)=>`
+      <li class="reveal ml-10" style="transition-delay:${i*60}ms">
+        <span class="absolute -left-[7px] mt-2 w-3.5 h-3.5 rounded-full bg-ink border-2 border-ember" aria-hidden="true"></span>
+        <p class="font-display text-[13px] text-ember font-semibold tracking-widest">${m[0]}</p>
+        <h4 class="mt-2 font-display text-xl font-semibold tracking-tight">${m[1]}</h4>
+        <p class="mt-2.5 text-sm text-ash max-w-2xl leading-relaxed">${m[2]}</p>
+      </li>`).join('')}
+    </ol>
+  </section>`;
+}
+
+function pagePortfolio(){
+  return `
+  ${hero('Portfolio','Selected investments',`
+    <p>A partial view of our 21 portfolio companies. A complete list, including valuations, is available to qualified LPs on request.</p>`)}
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-14 md:py-20">
+    <div class="flex flex-wrap gap-2.5" id="filterBar">
+      ${TAG_ORDER.map(([k,l],i)=>{
+        const n = k==='all' ? PORTFOLIO.length : PORTFOLIO.filter(c=>c.tag===k).length;
+        return `<button data-filter="${k}" class="filter-btn inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-[13px] font-medium border transition-all ${i===0?'bg-ember text-white border-ember':'border-white/[.09] text-ash hover:text-bone hover:border-white/25'}">${l}<span class="text-[10px] opacity-60">${n}</span></button>`;
+      }).join('')}
+    </div>
+    <div id="portfolioGrid" class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+    <div class="mt-14 reveal flex flex-col sm:flex-row gap-4 justify-between items-start sm:items-center rounded-2xl border border-white/[.07] bg-ink2 p-6">
+      <p class="text-xs text-faint leading-relaxed max-w-2xl">Nothing here is investment advice. Marks shown are stylized representations created for this site; all trademarks, names, and logos belong to their respective owners and do not imply endorsement of ${SITE.short}. Portfolio details are shared with each company’s permission.</p>
+      <a href="#/contact" class="shrink-0 text-sm font-medium text-ember underline-anim">Building something similar? Pitch us →</a>
+    </div>
+  </section>`;
+}
+
+function pageLeadership(){
+  return `
+  ${hero('Leadership','The partners',`
+    <p>Three co-founders, one shared playbook. Each partner leads investments in their thesis area and sits on the boards of their companies.</p>`)}
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-16 md:py-24">
+    <div class="grid md:grid-cols-3 gap-6">
+      ${partners.map((p,i)=>`
+      <div class="reveal group rounded-3xl border border-white/[.07] bg-ink2 overflow-hidden" style="transition-delay:${i*90}ms">
+        <div class="photo-wrap relative">
+          <img src="${p.img}" alt="Portrait of ${p.name}, ${p.role}, ${SITE.name}" class="w-full aspect-[4/4.4] object-cover" loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-ink2 via-transparent to-transparent" aria-hidden="true"></div>
+          <span class="absolute top-4 left-4 text-[10px] font-semibold uppercase tracking-[0.14em] px-3 py-1.5 rounded-full bg-ink/70 backdrop-blur border border-white/10 text-ember">${p.thesis}</span>
+        </div>
+        <div class="p-7 -mt-6 relative">
+          <h3 class="font-display text-xl font-semibold tracking-tight">${p.name}</h3>
+          <p class="mt-1 text-[13px] text-ember font-medium">${p.role}</p>
+          <p class="mt-4 text-[13.5px] text-ash leading-relaxed">${p.bio}</p>
+          <div class="mt-5 flex flex-wrap gap-2">${p.tags.map(t=>`<span class="text-[11px] px-2.5 py-1 rounded-md bg-white/[.04] border border-white/[.06] text-bone/70">${t}</span>`).join('')}</div>
+          <div class="mt-6 pt-5 border-t border-white/[.07] space-y-2.5">
+            <a href="mailto:${p.mail}@${SITE.domain}" class="flex items-center gap-2.5 group/mail">
+              <span class="inline-flex w-7 h-7 items-center justify-center rounded-md bg-white/[.05] border border-white/10 text-ash group-hover/mail:text-ember group-hover/mail:border-ember/40 transition-colors" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+              </span>
+              <span class="text-[13px] text-bone/85 group-hover/mail:text-ember transition-colors">${p.mail}@${SITE.domain}</span>
+            </a>
+            <a href="${p.li}" target="_blank" rel="noopener noreferrer" class="partner-li flex items-center gap-2.5" aria-label="${p.name} on LinkedIn">
+              <span class="li-ic inline-flex w-7 h-7 items-center justify-center rounded-md bg-white/[.05] border border-white/10 text-ash transition-colors" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+              </span>
+              <span class="text-[13px] text-bone/85 transition-colors">LinkedIn</span>
+              <svg class="text-faint group-hover/li:text-ember" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>`).join('')}
+    </div>
+    <p class="reveal mt-12 text-sm text-ash">Behind the partners: a team of 11 across San Francisco, London, and Singapore — research, platform, finance, and legal. <a href="#/contact" class="text-ember underline-anim">Get in touch →</a></p>
+  </section>`;
+}
+
+function pagePerspectives(){
+  return `
+  ${hero('Perspective','Letters on<br/><span class="text-ash">the market</span>',`
+    <p>Research and conviction, published when we have something to say — not on a schedule. Written by our partners, not a content team.</p>`)}
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-16 md:py-24">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">${LETTERS.map(letterCard).join('')}</div>
+  </section>`;
+}
+
+function pageLetter(slug){
+  const L = LETTERS.find(l=>l.slug===slug);
+  if(!L) return page404();
+  const others = LETTERS.filter(l=>l.slug!==slug).slice(0,2);
+  return `
+  <article class="fade-in max-w-3xl mx-auto px-5 lg:px-8 py-14 md:py-20">
+    <a href="#/perspectives" class="inline-flex items-center gap-2 text-sm text-ember font-medium hover:text-[#ff875f] transition-colors">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>All letters</a>
+    <header class="mt-10 pb-10 border-b border-white/[.08]">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-ember">${L.kicker}</span>
+        <span class="text-xs text-faint">${L.date} · ${L.read} read</span>
+      </div>
+      <h1 class="js-words mt-6 font-display text-3xl md:text-[2.6rem] font-semibold leading-[1.1] tracking-tight">${L.title}</h1>
+      <div class="mt-8 flex items-center gap-3">
+        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-ember/15 border border-ember/30 text-xs font-bold text-ember font-display">${L.author.split(' ').map(w=>w[0]).join('')}</span>
+        <div>
+          <p class="text-sm font-medium">${L.author}</p>
+          <p class="text-xs text-faint">${L.role}, ${SITE.name}</p>
+        </div>
+      </div>
+    </header>
+    <div class="prose-letter font-serif text-[1.14rem] leading-[1.85] text-bone/85 mt-10">${L.body}</div>
+    <div class="mt-16 rounded-2xl border border-white/[.07] bg-ink2 p-8 text-center">
+      <p class="font-display font-semibold text-lg">Building in the rails we just described?</p>
+      <p class="mt-2 text-sm text-ash">A partner reads every pitch within five business days.</p>
+      <a href="#/contact" class="mt-5 inline-flex btn-primary px-6 py-3 rounded-full bg-ember text-white text-sm font-medium hover:bg-[#e64a18]">Pitch ${SITE.short}</a>
+    </div>
+    <section class="mt-16 border-t border-white/5 pt-10">
+      <p class="text-[11px] uppercase tracking-[0.22em] text-ash">More letters</p>
+      <div class="mt-6 grid sm:grid-cols-2 gap-5">${others.map(letterCard).join('')}</div>
+    </section>
+  </article>`;
+}
+
+function pageContact(){
+  return `
+  ${hero('Contact','Pitch ' + SITE.short,`
+    <p>Raising a pre-seed or seed round? Tell us what you’re building. A partner reads every submission — and we respond within five business days.</p>`)}
+  <section class="max-w-7xl mx-auto px-5 lg:px-8 py-14 md:py-20 grid lg:grid-cols-3 gap-12">
+    <div class="lg:col-span-2">
+      <div id="pitchWrap" class="reveal rounded-3xl border border-white/[.07] bg-ink2 p-7 md:p-10">
+        <form id="pitchForm" novalidate>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <label class="block field"><span class="text-[13px] text-ash">Full name *</span>
+              <input name="name" required autocomplete="name" class="mt-2 w-full rounded-xl bg-ink border border-white/[.09] px-4 py-3.5 text-sm focus:outline-none focus:border-ember/70 focus:bg-ink3 transition-colors" placeholder="Satoshi N.">
+              <p class="field-error">Please tell us your name.</p></label>
+            <label class="block field"><span class="text-[13px] text-ash">Email *</span>
+              <input name="email" type="email" required autocomplete="email" inputmode="email" class="mt-2 w-full rounded-xl bg-ink border border-white/[.09] px-4 py-3.5 text-sm focus:outline-none focus:border-ember/70 focus:bg-ink3 transition-colors" placeholder="you@company.io">
+              <p class="field-error">Please enter a valid email address.</p></label>
+            <label class="block field"><span class="text-[13px] text-ash">Company / project</span>
+              <input name="company" autocomplete="organization" class="mt-2 w-full rounded-xl bg-ink border border-white/[.09] px-4 py-3.5 text-sm focus:outline-none focus:border-ember/70 focus:bg-ink3 transition-colors" placeholder="ACME Protocol"></label>
+            <label class="block field"><span class="text-[13px] text-ash">Stage</span>
+              <select name="stage" class="mt-2 w-full appearance-none rounded-xl bg-ink border border-white/[.09] px-4 py-3.5 text-sm focus:outline-none focus:border-ember/70 transition-colors">
+                <option>Idea / pre-seed</option><option>Seed</option><option>Series A</option><option>Other</option>
+              </select></label>
+            <label class="block field sm:col-span-2"><span class="text-[13px] text-ash">Deck or website</span>
+              <input name="url" type="url" inputmode="url" class="mt-2 w-full rounded-xl bg-ink border border-white/[.09] px-4 py-3.5 text-sm focus:outline-none focus:border-ember/70 focus:bg-ink3 transition-colors" placeholder="https://"></label>
+            <label class="block field sm:col-span-2"><span class="text-[13px] text-ash">What are you building? *</span>
+              <textarea name="pitch" rows="5" required class="mt-2 w-full rounded-xl bg-ink border border-white/[.09] px-4 py-3.5 text-sm focus:outline-none focus:border-ember/70 focus:bg-ink3 transition-colors resize-none" placeholder="One honest paragraph beats ten slides."></textarea>
+              <p class="field-error">Tell us in a sentence or two what you’re building.</p></label>
+          </div>
+          <div class="mt-6 p-4 rounded-xl bg-ember/[.06] border border-ember/20 flex gap-3 items-start">
+            <svg class="text-ember shrink-0 mt-0.5" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            <p class="text-xs text-ash leading-relaxed">Security note: ${SITE.name} will <strong class="text-bone/90">never</strong> ask for your seed phrase, private keys, or wallet permissions. Always verify you are on <strong class="text-bone/90">${SITE.domain}</strong> before sharing materials.</p>
+          </div>
+          <button type="submit" data-no-magnet class="mt-7 btn-primary px-8 py-3.5 rounded-full bg-ember text-white font-medium text-sm hover:bg-[#e64a18] active:scale-[.98]">Submit pitch</button>
+        </form>
+      </div>
+    </div>
+    <aside class="reveal space-y-4 lg:sticky lg:top-24 lg:self-start">
+      ${[['General & pitches',EMAIL.hello],['Limited partners',EMAIL.lp],['Press & media',EMAIL.press]]
+        .map(e=>`<div class="rounded-2xl border border-white/[.07] bg-ink2 p-5">
+          <p class="text-[10px] uppercase tracking-[0.18em] text-faint">${e[0]}</p>
+          <div class="mt-2.5 flex items-center justify-between gap-3">
+            <a href="mailto:${e[1]}" class="text-sm font-medium break-all hover:text-ember transition-colors">${e[1]}</a>
+            <button type="button" class="copy-email shrink-0 text-[11px] text-ember hover:underline" data-email="${e[1]}">Copy</button>
+          </div></div>`).join('')}
+      <div class="rounded-2xl border border-white/[.07] bg-ink2 p-5">
+        <p class="text-[10px] uppercase tracking-[0.18em] text-faint">Headquarters</p>
+        <p class="mt-2.5 text-sm leading-relaxed">${SITE.address.street}<br>${SITE.address.city}</p>
+        <p class="mt-1.5 text-xs text-faint">${SITE.address.note}</p>
+        <div class="mt-4 pt-4 border-t border-white/[.06]">
+          <p class="text-[10px] uppercase tracking-[0.18em] text-faint">Response time</p>
+          <p class="mt-2 text-sm">Pitches: within 5 business days<br>LP inquiries: within 48 hours</p>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section class="border-t border-white/5 bg-ink2">
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-16 md:py-20">
+      <div class="reveal">
+        <p class="text-[11px] uppercase tracking-[0.22em] text-ash">FAQ</p>
+        <h2 class="mt-4 font-display text-3xl font-semibold tracking-tight">Before you write</h2>
+      </div>
+      <div class="reveal mt-10 max-w-3xl divide-y divide-white/[.05] rounded-2xl border border-white/[.07] bg-ink">
+        ${[
+          ['What stage and check size do you invest at?','We lead pre-seed and seed rounds with initial checks of $250K–$3M, keeping 50% of Fund II as reserves to double down in follow-on rounds up to $10M per company. We occasionally lead lean Series A rounds for existing portfolio companies.'],
+          ['Do you invest outside the United States?','Yes — our 21 portfolio companies span 14 countries. We are thesis-agnostic on geography and token vs. equity structure, but we are strict about founder quality and market size.'],
+          ['Do you lead rounds?','We lead or co-lead. When we lead, we run a tight process: a written memo on every deal, a partner on your board from day one, and a decision inside three weeks.'],
+          ['Do you take token deals or need an introduction?','We invest in both equity and token structures. A warm introduction helps but is not required — some of our best investments arrived via the form on this page.'],
+          ['How long does your process take?','A partner reads every submission, and you’ll hear back within five business days either way. Full diligence for pre-seed and seed typically closes inside three weeks.']
+        ].map(f=>`
+        <details class="group px-6 py-5">
+          <summary class="flex justify-between items-center gap-4 cursor-pointer list-none font-medium text-[15px]">${f[0]}
+            <span class="text-ember transition-transform duration-300 group-open:rotate-45 text-xl leading-none shrink-0" aria-hidden="true">+</span></summary>
+          <p class="mt-3.5 text-sm text-ash leading-relaxed">${f[1]}</p>
+        </details>`).join('')}
+      </div>
+    </div>
+  </section>`;
+}
+
+function legalPage(title, bodyHtml){
+  return `
+  ${hero('Legal', title, '')}
+  <section class="max-w-3xl mx-auto px-5 lg:px-8 py-14 md:py-20">
+    <div class="prose-legal font-serif text-[1.08rem] leading-[1.85] text-bone/85">${bodyHtml}</div>
+    <p class="mt-14 text-sm text-faint">Last updated: January 2026 · Operated by ${SITE.legal}, San Francisco, CA.</p>
+  </section>`;
+}
+
+function pageTerms(){
+  return legalPage('Terms of Use',`
+    <p>These Terms of Use govern your access to and use of the ${SITE.name} website operated by ${SITE.legal} (“${SITE.short}”, “we”, “us”). By accessing this site, you agree to these terms. If you do not agree, please do not use the site.</p>
+    <h3>Informational purposes only</h3>
+    <p>Content on this site is provided for general informational purposes. Nothing on this site constitutes an offer to sell, or a solicitation of an offer to buy, any security or interest in any investment vehicle. Any such offer or solicitation is made only by means of definitive offering documents, to qualified investors, subject to applicable law.</p>
+    <h3>No investment advice</h3>
+    <p>Statements regarding portfolio companies, market conditions, or investment theses reflect our views at the time of writing, are subject to change without notice, and do not constitute investment, legal, accounting, or tax advice. Venture investing involves substantial risk, including the total loss of invested capital.</p>
+    <h3>Trademarks</h3>
+    <p>Company names, marks, and trademarks referenced on this site are the property of their respective owners. Their appearance does not imply endorsement of ${SITE.short} by those companies, or of those companies by ${SITE.short}.</p>
+    <h3>Submissions</h3>
+    <p>If you submit a pitch or contact us, you grant us a limited, non-exclusive right to review and evaluate the materials you share. We treat all submissions as confidential and do not use them outside of evaluating a potential investment or relationship.</p>
+    <h3>Limitation of liability</h3>
+    <p>The site is provided “as is” and “as available”. To the fullest extent permitted by law, ${SITE.short} disclaims all warranties and shall not be liable for any damages arising from use of this site, its availability, or its content.</p>
+    <h3>Contact</h3>
+    <p>Questions about these terms may be directed to <a class="text-ember hover:underline" href="mailto:${EMAIL.hello}">${EMAIL.hello}</a>.</p>`);
+}
+
+function pagePrivacy(){
+  return legalPage('Privacy Policy',`
+    <p>${SITE.legal} (“${SITE.short}”) respects your privacy. This policy explains what we collect through this website and how we use it.</p>
+    <h3>What we collect</h3>
+    <p>If you submit a pitch or contact form, we collect the information you provide: name, email address, company details, and the contents of your message. We do not sell this information to third parties.</p>
+    <h3>How we use it</h3>
+    <p>We use submitted information to evaluate investment opportunities, respond to inquiries, and maintain our records. We may share limited information with service providers (e.g., email hosting) under confidentiality obligations. If you become a portfolio founder or an LP, separately executed agreements govern that information.</p>
+    <h3>Cookies and tracking</h3>
+    <p>This site sets no advertising cookies and no cross-site tracking pixels. Any aggregated, anonymous usage statistics are used solely to improve the site.</p>
+    <h3>Data retention and your rights</h3>
+    <p>Pitch materials are retained while an investment decision or relationship is plausible, or as needed for legal compliance. You may request access to, correction of, or deletion of your personal data by writing to <a class="text-ember hover:underline" href="mailto:${EMAIL.hello}">${EMAIL.hello}</a>.</p>
+    <h3>Security</h3>
+    <p>${SITE.name} will never ask for your seed phrase, private keys, or wallet permissions. Always verify you are on our official domain, <strong class="text-bone">${SITE.domain}</strong>, before sharing sensitive materials.</p>`);
+}
+
+function page404(){
+  return `
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 hero-grid" aria-hidden="true"></div>
+    <div class="relative max-w-3xl mx-auto px-5 py-28 md:py-36 text-center">
+      <p class="fade-in text-[11px] uppercase tracking-[0.22em] text-ember">Error 404</p>
+      <h1 class="fade-in mt-5 font-display text-4xl md:text-5xl font-semibold tracking-tight">This page drifted off-chain</h1>
+      <p class="fade-in mt-4 text-ash text-[15px]">The page you’re looking for doesn’t exist or has moved.</p>
+      <div class="fade-in mt-9 flex flex-wrap gap-3.5 justify-center">
+        <a href="#/home" class="btn-primary px-6 py-3 rounded-full bg-ember text-white text-sm font-medium hover:bg-[#e64a18]">Back to home</a>
+        <a href="#/contact" class="px-6 py-3 rounded-full border border-white/15 text-sm font-medium hover:border-ember/60 transition-colors">Contact us</a>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ==================================================================
+   🔀 ROUTER
+   ================================================================== */
+const PAGES = { home:pageHome, about:pageAbout, portfolio:pagePortfolio, leadership:pageLeadership,
+                perspectives:pagePerspectives, contact:pageContact, terms:pageTerms, privacy:pagePrivacy };
+
+const TITLES = { home:'Crypto-native venture firm, San Francisco', about:'About — patient capital, crypto conviction',
+  portfolio:'Portfolio — selected investments', leadership:'Leadership — the partners',
+  perspectives:'Letters on the market', contact:`Pitch ${SITE.short} — contact`,
+  terms:'Terms of Use', privacy:'Privacy Policy', '404':'Page not found' };
+
+function setTitle(route, param){
+  let t = TITLES[route] || TITLES.home;
+  if(route==='letter') t = (LETTERS.find(l=>l.slug===param) || {}).title || TITLES['404'];
+  document.title = `Tephra Capital — ${t}`;
+}
+
+function setArticleSchema(L){
+  document.getElementById('ld-article')?.remove();
+  if(!L) return;
+  const s = document.createElement('script');
+  s.type = 'application/ld+json'; s.id = 'ld-article';
+  s.textContent = JSON.stringify({
+    "@context":"https://schema.org","@type":"Article",
+    "headline":L.title,"description":L.excerpt,
+    "author":{"@type":"Person","name":L.author,"jobTitle":L.role},
+    "publisher":{"@type":"Organization","name":SITE.name,"url":"https://"+SITE.domain},
+    "datePublished":L.iso,
+    "mainEntityOfPage":"https://"+SITE.domain+"/#/letter/"+L.slug
+  });
+  document.head.appendChild(s);
+}
+
+function render(){
+  const hash = location.hash || '#/home';
+  const [path, param] = hash.replace(/^#\/?/,'').split('/').filter(Boolean);
+  const key = path || 'home';
+
+  let html, activeKey, letterObj=null;
+  if(key==='letter' && param){ letterObj = LETTERS.find(l=>l.slug===param); html = pageLetter(param); activeKey='perspectives'; setTitle('letter',param); }
+  else if(PAGES[key]){ html = PAGES[key](); activeKey = key; setTitle(key); }
+  else { html = page404(); activeKey='404'; setTitle('404'); }
+
+  setArticleSchema(letterObj);
+  document.getElementById('app').innerHTML = html;
+  document.querySelectorAll('.nav-link').forEach(a => a.classList.toggle('router-link-active', a.dataset.route===activeKey));
+  closeMenu();
+  window.scrollTo(0,0);
+  initReveal(); initCountup(); initMailBinding(); initWords(); initSparks();
+  initSpotlight(); initChart(); initTilt(); initMagnetic(); pageTransition();
+  if(activeKey==='portfolio') setupPortfolioFilter();
+  if(activeKey==='contact') setupPitchForm();
+}
+
+/* ==================================================================
+   ✨ EFFECTS & INTERACTIONS
+   ================================================================== */
+function initReveal(){
+  const els = document.querySelectorAll('.reveal');
+  if(!els.length) return;
+  if(!('IntersectionObserver' in window) || prefersReduced){ els.forEach(e=>e.classList.add('on')); return; }
+  const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); }}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(e=>io.observe(e));
+}
+
+function initCountup(){
+  const els = document.querySelectorAll('[data-countup]');
+  if(!els.length || !('IntersectionObserver' in window) || prefersReduced) return;
+  const io = new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el = e.target, full = el.dataset.countup;
+    const m = full.match(/^([^\d]*)([\d,\.]+)(.*)$/);
+    io.unobserve(el);
+    if(!m || !full.match(/\d/)) return;
+    const start = performance.now(), dur = 1100;
+    const prefix = m[1], target = parseFloat(m[2].replace(/,/g,'')), suffix = m[3];
+    const isFloat = m[2].includes('.');
+    const tick = now=>{
+      const p = Math.min((now-start)/dur, 1);
+      const eased = 1 - Math.pow(1-p, 3);
+      const val = target * eased;
+      el.textContent = prefix + (isFloat ? val.toFixed(1) : Math.round(val).toLocaleString('en-US')) + suffix;
+      if(p<1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }),{threshold:.4});
+  els.forEach(e=>io.observe(e));
+}
+
+/* word-by-word reveal заголовков */
+function initWords(){
+  document.querySelectorAll('.js-words').forEach(h=>{
+    let i=0;
+    const walk = n => {
+      [...n.childNodes].forEach(c=>{
+        if(c.nodeType===3){
+          const frag = document.createDocumentFragment();
+          c.textContent.split(/(\s+)/).forEach(p=>{
+            if(!p) return;
+            if(/^\s+$/.test(p)){ frag.appendChild(document.createTextNode(' ')); return; }
+            const s = document.createElement('span');
+            s.className = 'word'; s.textContent = p;
+            s.style.transitionDelay = (120 + i*45) + 'ms'; i++;
+            frag.appendChild(s);
+          });
+          n.replaceChild(frag, c);
+        } else if(c.nodeType===1 && c.tagName!=='BR' && !c.classList.contains('word')){
+          if(c.classList.contains('shimmer')){          // акцентная фраза — единым блоком
+            c.classList.add('word');
+            c.style.transitionDelay = (120 + i*45) + 'ms'; i++;
+          } else { walk(c); }                            // обычные span — режем по словам
+        }
+      });
+    };
+    walk(h);
+  });
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    document.querySelectorAll('.js-words').forEach(h=>h.classList.add('words-in'));
+  }));
+}
+
+/* вулканические искры в hero */
+function initSparks(){
+  if(prefersReduced) return;
+  document.querySelectorAll('.sparks').forEach(box=>{
+    if(box.dataset.done) return; box.dataset.done='1';
+    for(let i=0;i<14;i++){
+      const s = document.createElement('span');
+      const size = (1.5 + Math.random()*2.5).toFixed(1);
+      s.className = 'spark';
+      s.style.cssText = `left:${(Math.random()*100).toFixed(1)}%;width:${size}px;height:${size}px;`+
+        `animation-duration:${(9+Math.random()*11).toFixed(1)}s;animation-delay:-${(Math.random()*14).toFixed(1)}s`;
+      box.appendChild(s);
+    }
+  });
+}
+
+/* spotlight следует за курсором внутри hero */
+function initSpotlight(){
+  document.querySelectorAll('.spotlight').forEach(sp=>{
+    const sec = sp.parentElement;
+    sec.addEventListener('pointermove', e=>{
+      const r = sec.getBoundingClientRect();
+      sp.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      sp.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+  });
+}
+
+/* график рисуется линией при скролле */
+function initChart(){
+  const svg = document.querySelector('.index-chart');
+  if(!svg || svg.dataset.done) return; svg.dataset.done='1';
+  const line = svg.querySelector('.chart-line');
+  const len = line.getTotalLength();
+  svg.querySelectorAll('.chart-dot').forEach((d,i)=>{ d.style.transitionDelay = (1250 + i*160) + 'ms'; });
+  if(prefersReduced){ svg.classList.add('chart-drawn'); line.style.strokeDashoffset = 0; return; }
+  line.style.strokeDasharray = len;
+  line.style.strokeDashoffset = len;
+  const io = new IntersectionObserver(es=>{
+    es.forEach(en=>{
+      if(en.isIntersecting){
+        svg.classList.add('chart-drawn');
+        line.style.transition = 'stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1) .15s';
+        line.style.strokeDashoffset = 0;
+        io.disconnect();
+      }
+    });
+  },{threshold:.35});
+  io.observe(svg);
+}
+
+/* 3D-tilt карточек */
+function initTilt(){
+  if(prefersReduced) return;
+  document.querySelectorAll('[data-tilt]').forEach(card=>{
+    if(card.dataset.tiltInit) return; card.dataset.tiltInit = '1';
+    let raf = null;
+    card.addEventListener('pointerenter', ()=>card.classList.add('tilting'));
+    card.addEventListener('pointermove', e=>{
+      if(e.pointerType !== 'mouse') return;
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left)/r.width - .5;
+      const y = (e.clientY - r.top)/r.height - .5;
+      if(raf) cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(()=>{
+        card.style.transform = `perspective(900px) rotateX(${(-y*4.5).toFixed(2)}deg) rotateY(${(x*6).toFixed(2)}deg) translateY(-6px)`;
+      });
+    });
+    card.addEventListener('pointerleave', ()=>{ card.classList.remove('tilting'); card.style.transform=''; });
+  });
+}
+
+/* магнитные кнопки */
+function initMagnetic(){
+  if(prefersReduced) return;
+  document.querySelectorAll('.btn-primary:not([data-no-magnet])').forEach(btn=>{
+    if(btn.dataset.magInit) return; btn.dataset.magInit = '1';
+    btn.addEventListener('pointermove', e=>{
+      if(e.pointerType !== 'mouse') return;
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width/2;
+      const y = e.clientY - r.top - r.height/2;
+      btn.style.transform = `translate(${(x*.16).toFixed(1)}px,${(y*.3).toFixed(1)}px)`;
+    });
+    btn.addEventListener('pointerleave', ()=> btn.style.transform='');
+  });
+}
+
+/* параллакс glow-сфер за курсором */
+let glowRaf = null;
+document.addEventListener('pointermove', e=>{
+  if(prefersReduced) return;
+  const px = e.clientX/innerWidth - .5, py = e.clientY/innerHeight - .5;
+  if(!glowRaf) glowRaf = requestAnimationFrame(()=>{
+    document.querySelectorAll('.hero-glow').forEach(el=>{
+      el.style.translate = `${(px*36).toFixed(1)}px ${(py*24).toFixed(1)}px`;
+    });
+    glowRaf = null;
+  });
+},{passive:true});
+
+/* плавный переход между страницами */
+function pageTransition(){
+  if(prefersReduced) return;
+  document.getElementById('app').animate(
+    [{opacity:0, transform:'translateY(16px)'},{opacity:1, transform:'none'}],
+    {duration:430, easing:'cubic-bezier(.2,.7,.3,1)'}
+  );
+}
+
+function setupPortfolioFilter(){
+  const grid = document.getElementById('portfolioGrid');
+  const paint = f => { grid.innerHTML = (f==='all' ? PORTFOLIO : PORTFOLIO.filter(c=>c.tag===f)).map(portfolioCard).join(''); initReveal(); initTilt(); };
+  paint('all');
+  document.getElementById('filterBar').addEventListener('click', e=>{
+    const btn = e.target.closest('.filter-btn'); if(!btn) return;
+    document.querySelectorAll('.filter-btn').forEach(b=>{
+      const on = b===btn;
+      b.className = `filter-btn inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-[13px] font-medium border transition-all ${on?'bg-ember text-white border-ember':'border-white/[.09] text-ash hover:text-bone hover:border-white/25'}`;
+    });
+    paint(btn.dataset.filter);
+  });
+}
+
+function setupPitchForm(){
+  const form = document.getElementById('pitchForm');
+  form?.addEventListener('submit', e=>{
+    e.preventDefault(); const f = e.target;
+    let firstBad = null;
+    for(const el of ['name','email','pitch']){
+      const bad = !f[el].value.trim() || (el==='email' && !/^\S+@\S+\.\S+$/.test(f[el].value));
+      f[el].closest('.field')?.classList.toggle('invalid', bad);
+      f[el].setAttribute('aria-invalid', bad);
+      if(bad && !firstBad) firstBad = f[el];
+    }
+    if(firstBad){
+      const card = document.getElementById('pitchWrap');
+      card.classList.remove('shake'); void card.offsetWidth; card.classList.add('shake');
+      firstBad.focus();
+      return;
+    }
+    document.getElementById('pitchWrap').innerHTML = `
+      <div class="rounded-3xl border border-ember/30 bg-ink2 p-10 md:p-14 text-center">
+        <span class="mx-auto w-14 h-14 rounded-full bg-ember/15 border border-ember/40 flex items-center justify-center">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff5c28" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+        </span>
+        <h3 class="mt-6 font-display text-xl font-semibold">Thanks — your pitch is in.</h3>
+        <p class="mt-3 text-sm text-ash max-w-sm mx-auto leading-relaxed">Expect a reply from a partner within five business days. We read every submission ourselves — no associates, no filters.</p>
+      </div>`;
+    showToast(`Pitch submitted to ${EMAIL.hello}`);
+  });
+  /* снимаем ошибку при вводе */
+  form?.querySelectorAll('input,textarea').forEach(el=>{
+    el.addEventListener('input', ()=> el.closest('.field')?.classList.remove('invalid'));
+  });
+}
+
+/* ===== global: menu, copy, toast, progress, to-top ===== */
+const menuBtn = document.getElementById('menuBtn'), mobileMenu = document.getElementById('mobileMenu');
+function closeMenu(){ mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded','false'); }
+menuBtn.addEventListener('click', ()=>{ const open = mobileMenu.classList.toggle('hidden'); menuBtn.setAttribute('aria-expanded', String(!open)); });
+mobileMenu.addEventListener('click', e=>{ if(e.target.tagName==='A') closeMenu(); });
+
+document.addEventListener('click', e=>{
+  const btn = e.target.closest('.copy-email'); if(!btn) return;
+  const email = btn.dataset.email;
+  (navigator.clipboard?.writeText(email) ?? Promise.reject()).then(()=>showToast(`${email} copied`),()=>showToast(email));
+});
+
+let toastTimer;
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.remove('opacity-0','translate-y-2');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(()=>t.classList.add('opacity-0','translate-y-2'), 2400);
+}
+
+const progressBar = document.getElementById('scrollProgress');
+const toTopBtn = document.getElementById('toTop');
+window.addEventListener('scroll', ()=>{
+  const h = document.documentElement;
+  const max = h.scrollHeight - h.clientHeight;
+  progressBar.style.width = (max > 0 ? h.scrollTop/max*100 : 0) + '%';
+  toTopBtn.classList.toggle('show', h.scrollTop > 560);
+},{passive:true});
+toTopBtn.addEventListener('click', ()=>window.scrollTo({top:0, behavior: prefersReduced ? 'auto' : 'smooth'}));
+
+document.querySelector('.skip-link').addEventListener('click', e=>{
+  e.preventDefault();
+  const m = document.getElementById('app');
+  m.setAttribute('tabindex','-1');
+  m.scrollIntoView({behavior: prefersReduced ? 'auto' : 'smooth'});
+  m.focus({preventScroll:true});
+});
+
+document.getElementById('footYear').textContent = new Date().getFullYear();
+
+window.addEventListener('hashchange', render);
+render();
+</script>
+</body>
+</html>
