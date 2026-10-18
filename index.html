@@ -295,7 +295,7 @@ const SITE = {
   social: {
     li: 'https://www.linkedin.com/company/tephra-capital'
   },
-  mail: ['contact','lp','press','careers','kal','daniel','priya']
+  mail: ['contact','lp','press','careers','kal','lokendra','daniel','priya']
 };
 const EMAIL = Object.fromEntries(SITE.mail.map(p => [p, `${p}@${SITE.domain}`]));
 document.addEventListener('DOMContentLoaded', initMailBinding);
@@ -483,9 +483,9 @@ const partners = [
     bio:'Sam focuses on early-stage infrastructure, DeFi and consumer crypto. He works hands-on with founding teams on token design, go-to-market and follow-on fundraising, and is often the first person a founder meets at the firm.',
     thesis:'Infrastructure & DeFi', tags:['Infrastructure','Token design','GT'], li:'https://www.linkedin.com/in/sam-ojha-9a4b583b8/' },
 
-  { img:'photos/sawai.jpg', name:'Sawai Goyal', role:'Co-Founder & General Partner',  mail:'sawai',
-    bio:'Sawai is a protocol engineer by trade — he contributed to two major L1 clients before founding Tephra. He leads the infrastructure thesis and diligences every line of code we fund at pre-seed.',
-    thesis:'Infrastructure', tags:['Infrastructure','ZK','Security'], li:'https://www.linkedin.com/in/sawai-goyal-29b099378/' },
+  { img:'photos/lokendra.jpg', name:'Lokendra Singh Chauhan', role:'Head of Institutional Infrastructure', mail:'lokendra',
+    bio:'Lokendra spent his first decade building custody MPC, cold storage and Proof of Reserves systems at the exchanges where this industry keeps its money — Gemini, Coinbase and Bloomberg. At Tephra he reviews the key management and settlement architecture of every project we back, before a single dollar moves.',
+    thesis:'Infrastructure', tags:['Custody','MPC','Settlement rails'], li:'https://www.linkedin.com/in/lokendra-singh-chauhan-488b7241a },
   { img:'photos/panda.jpg', name:'Sam Panda',   role:'Co-Founder & General Partner',  mail:'panda',
     bio:'He built and sold a crypto data company before joining Tephra. He leads the consumer and gaming thesis, the research platform, and the Tephra LP relationships across Asia and Europe.',
     thesis:'Consumer & Gaming', tags:['Consumer','Gaming','Research'], li:'https://www.linkedin.com/in/sam-panda-b3267234b/' },
@@ -705,7 +705,7 @@ function pagePortfolio(){
 function pageLeadership(){
   return `
   ${hero('Leadership','The partners',`
-    <p>Three co-founders, one shared playbook. Each partner leads investments in their thesis area and sits on the boards of their companies.</p>`)}
+    <p>Four partners, one shared playbook. Each leads their thesis area, and Lokendra takes the technical side — custody, signing and settlement — of everything we fund.</p>`)}
   <section class="max-w-7xl mx-auto px-5 lg:px-8 py-16 md:py-24">
     <div class="grid md:grid-cols-3 gap-6">
       ${partners.map((p,i)=>`
